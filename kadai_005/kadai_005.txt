@@ -1,0 +1,43 @@
+aya@AyakonoMacBook-Pro Git % mkdir git_challenge
+
+aya@AyakonoMacBook-Pro Git % cd git_challenge
+git init
+
+Initialized empty Git repository in /Users/aya/Desktop/学習用/サムライ教材/Git/git_challenge/.git/
+
+aya@AyakonoMacBook-Pro git_challenge % touch hello_world.txt
+
+aya@AyakonoMacBook-Pro git_challenge % git add hello_world.txt
+git commit -m "hello_world.txtを追加"
+[main (root-commit) 1090fc8] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+aya@AyakonoMacBook-Pro git_challenge % git add hello_world.txt
+git commit -m "日本語訳を追記"
+[main 7730079] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+aya@AyakonoMacBook-Pro git_challenge % git log --oneline
+7730079 (HEAD -> main) 日本語訳を追記
+1090fc8 hello_world.txtを追加
+
+aya@AyakonoMacBook-Pro git_challenge % history
+   27  git config --global user.email
+   28  git config --global --list
+   29  git config init.defaultBranch
+   30  git config --global init.defaultBranch main
+   31  git config --global init.defaultBranch
+   32  pwd
+   33  cd /Users/aya/Desktop/学習用/サムライ教材/Git
+   34  mkdir git_tutorial
+   35  cd git_tutorial
+   36  git init
+   37  mkdir git_challenge
+   38  cd git_challenge
+   39  touch hello_world.txt
+   40  git add hello_world.txt
+   41  git commit -m "hello_world.txtを追加"
+   42  git add hello_world.txt
+   43  git commit -m "日本語訳を追記"
+   44  git log --oneline
